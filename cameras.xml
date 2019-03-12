@@ -1,0 +1,20 @@
+<!-- log: ir_microstrain_onboard_calib_02.bag, frame_skip: 3 -->
+<!-- Reprojection error for camera ir0: 56.4438 rmse: 0.123543 -->
+<rig>
+    <camera>
+        <camera_model name="ir0" index="0" serialno="0" type="calibu_fu_fv_u0_v0_k1_k2" version="0">
+            <width> 1280 </width>
+            <height> 720 </height>
+            <!-- Use RDF matrix, [right down forward], to define the coordinate frame convention -->
+            <right> [ 1; 0; 0 ] </right>
+            <down> [ 0; 1; 0 ] </down>
+            <forward> [ 0; 0; 1 ] </forward>
+            <!-- Camera parameters ordered as per type name. -->
+            <params> [ 639.4374; 639.6836; 635.6927; 354.991; -0.04153868; 0.03082308 ] </params>
+        </camera_model>
+        <pose>
+            <!-- Camera pose. World from Camera point transfer. 3x4 matrix, in the RDF frame convention defined above -->
+            <T_wc> [ 1, 0, 0, 0; 0, 1, 0, 0; 0, 0, 1, 0 ] </T_wc>
+        </pose>
+    </camera>
+</rig>
